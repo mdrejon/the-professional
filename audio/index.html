@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>WebRTC Video Conference Tutorial - Plain WebRTC</title>
+</head>
+<body>
+    <h1>WebRTC Video Conference Tutorial - Plain WebRTC</h1>
+
+    <div id="selectRoom">
+        <label>Type the room number</label>
+        <input id="roomNumber" type="text" />
+        <input id="userid" type="text" />
+        <button id="goRoom">Go</button>
+    </div>
+
+    <div id="consultingRoom">
+        <video id="remoteVideo" autoplay></video>
+    </div>
+	
+	
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/socket.io-client@2/dist/socket.io.js"></script>
+    <script src="https://hostdivine.com/clients/directory-admin/audio/app.js"></script>
+</body>

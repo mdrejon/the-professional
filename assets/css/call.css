@@ -1,0 +1,57 @@
+
+.call {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: #000000;
+  color: #fff;
+}
+.call-worap {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+.call .container, .call .row {
+  height: 100%;
+}
+.call-worap.d-table {
+}
+.call-worap .d-table-cell {
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+.call-bar {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+}
+.call-bar button {
+  background-color: #fff !important;
+  border: navajowhite;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.call-bar button.cencel {
+  background-color: #FF4242 !important;
+  color: #fff;
+}
+
+.call-worap img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  border: 4px solid #ddd;
+  margin-bottom: 17px;
+}
+
+#redial {
+  background-color: green !important;
+}
+.cencel {
+  padding-right: ;
+  margin-right: 10px;
+}

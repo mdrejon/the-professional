@@ -1,0 +1,100 @@
+.top-search {border: 1px solid #e121;border-radius: 9px;padding-left: 6px;}
+
+button {}
+
+.single-search button {border-radius: 0px 6px 6px 0px;background-color: #e1e1e1;/* border: 1px solid #e1e1e1; */height: 100%;color: #2a5992 !important;}
+
+/*input:focus {
+    border: none;
+}*/
+
+input:focus {
+    outline: none;
+}
+
+.single-search button:hover {
+    background-color: #2A5992 !important;
+    color: #fff !important;
+    margin: 0 !important;
+}
+
+.member-short-search.d-table {
+    border-radius: 5px;
+}
+
+.advance-btn {
+    border-radius: 0 !important;
+}
+
+/*.single-search {
+    border-right: navajowhite;
+}*/
+section.footer-section-2 {
+    background-color: #222;
+}
+
+.footer-newslatter input {
+    margin-right: 0;
+}
+span.footer-icon {
+    text-align: left;
+}
+span.footer-icon {
+    text-align: left;
+}
+
+section.footer-bottom a {
+    color: #fff;
+}
+
+section.footer-bottom a:hover {
+    color: #222222;
+    text-decoration: none;
+}
+.Subscribe-now input {
+    text-align: left;
+    border-radius: 5px 0 0 5px !important;
+}
+
+.Subscribe-now button {
+    border-radius: 0px 5px 5px 0;
+}
+
+.Subscribe-now {
+    text-align: left;
+}
+.logo {
+    padding-left: 0 !important;
+}
+
+span.header-trigger {
+    padding-left: 0 !important;
+}
+
+.welcome-img {
+    padding-left: 0;
+}
+.filter {
+    padding-left: 0;
+}
+
+.filter-item {
+    padding-left: 0;
+}
+.filter {
+    padding-left: 0;
+}
+
+.filter-item {
+    padding-left: 0;
+}
+.popup-contact input, .popup-contact textarea {
+    border: 1px solid #e1e1e1;
+}
+
+.popup-contact textarea {
+    min-width: 100px !important;
+}
+.member-short-search {
+    background-color: #333;
+}

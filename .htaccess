@@ -1,0 +1,312 @@
+#AddHandler application/x-httpd-ea-php82___lsphp .php
+#AddHandler application/x-httpd-php5 .php
+
+# disable directory browsing
+Options -Indexes
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTPS} !=on
+RewriteCond %{HTTP_USER_AGENT} ^(.+)$
+RewriteCond %{HTTP_HOST} ^academichub\.hostdivine\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.academichub\.hostdivine\.com$
+RewriteRule .* https://academichub.hostdivine.com%{REQUEST_URI} [R=301,L]
+Header add Strict-Transport-Security "max-age=300"
+
+
+
+RewriteRule ^about/(.*)/ about.php?slug=$1
+RewriteRule ^about/(.*)$ about.php?slug=$1
+RewriteRule ^about/ about.php
+RewriteRule ^about$ about.php
+
+RewriteRule ^terms-conditions/(.*)/ terms-conditions.php?slug=$1
+RewriteRule ^terms-conditions/(.*)$ terms-conditions.php?slug=$1
+RewriteRule ^terms-conditions/ terms-conditions.php
+RewriteRule ^terms-conditions$ terms-conditions.php
+
+RewriteRule ^contact/(.*)/ contact.php?slug=$1
+RewriteRule ^contact/(.*)$ contact.php?slug=$1
+RewriteRule ^contact/ contact.php
+RewriteRule ^contact$ contact.php
+
+RewriteRule ^user-guide/(.*)/ user-guide.php?slug=$1
+RewriteRule ^user-guide/(.*)$ user-guide.php?slug=$1
+RewriteRule ^user-guide/ user-guide.php
+RewriteRule ^user-guide$ user-guide.php
+
+RewriteRule ^blog/categories/(.*)/ blog-categories.php?slug=$1
+RewriteRule ^blog/categories/(.*)$ blog-categories.php?slug=$1
+RewriteRule ^blog/categories blog.php
+RewriteRule ^blog/categories$ blog.php
+
+RewriteRule ^blog/(.*)/ blog-details.php?slug=$1
+RewriteRule ^blog/(.*)$ blog-details.php?slug=$1
+RewriteRule ^blog/ blog.php
+RewriteRule ^blog$ blog.php
+
+RewriteRule ^services/(.*)/ service.php?slug=$1
+RewriteRule ^services/(.*)$ service.php?slug=$1
+RewriteRule ^services/ service.php
+RewriteRule ^services$ service.php
+
+RewriteRule ^profile/list member_job.php
+RewriteRule ^profile/list$ member_job.php
+
+RewriteRule ^profile/change-password change-password.php
+RewriteRule ^profile/change-password$ change-password.php 
+
+
+RewriteRule ^profile/change-email change-email.php
+RewriteRule ^profile/change-email$ change-email.php 
+
+RewriteRule ^view-feedback feedback.php
+RewriteRule ^view-feedback$ feedback.php 
+
+RewriteRule ^write-feedback write-feedback.php
+RewriteRule ^write-feedback$ write-feedback.php 
+ 
+
+RewriteRule ^jobs/(.*)/ job.php?slug=$1
+RewriteRule ^jobs(.*)$ job.php?slug=$1
+RewriteRule ^jobs/ job.php
+RewriteRule ^jobs$ job.php
+
+
+RewriteRule ^members/(.*)/ member-profile.php?slug=$1
+RewriteRule ^members/(.*)$ member-profile.php?slug=$1
+RewriteRule ^members/ member-profile.php
+RewriteRule ^members$ member-profile.php
+
+
+RewriteRule ^listing/(.*)/ listing.php?slug=$1
+RewriteRule ^listing/(.*)$ listing.php?slug=$1
+RewriteRule ^listing/ listing.php
+RewriteRule ^listing$ listing.php
+
+RewriteRule ^categories/(.*)/ categories.php?slug=$1
+RewriteRule ^categories/(.*)$ categories.php?slug=$1
+RewriteRule ^categories/ categories.php
+RewriteRule ^categories$ categories.php
+
+RewriteRule ^sign-in/(.*)/ member-login.php?slug=$1
+RewriteRule ^sign-in/(.*)$ member-login.php?slug=$1
+RewriteRule ^sign-in/ member-login.php
+RewriteRule ^sign-in$ member-login.php
+
+RewriteRule ^create-account/(.*)/ member-registration.php?slug=$1
+RewriteRule ^create-account/(.*)$ member-registration.php?slug=$1
+RewriteRule ^create-account/ member-registration.php
+RewriteRule ^create-account$ member-registration.php
+
+RewriteRule ^profile/(.*)/ profile.php?slug=$1
+RewriteRule ^profile/(.*)$ profile.php?slug=$1
+RewriteRule ^profile/ profile.php
+RewriteRule ^profile$ profile.php 
+
+
+RewriteRule ^forget-password/(.*)/ forget-password.php?slug=$1
+RewriteRule ^forget-password/(.*)$ forget-password.php?slug=$1
+RewriteRule ^forget-password/ forget-password.php
+RewriteRule ^forget-password$ forget-password.php
+
+
+RewriteRule ^verification-center-home/(.*)/ verification-center-home.php?slug=$1
+RewriteRule ^verification-center-home/(.*)$ verification-center-home.php?slug=$1
+RewriteRule ^verification-center-home/ verification-center-home.php
+RewriteRule ^verification-center-home$ verification-center-home.php
+
+
+
+RewriteRule ^verification-center/(.*)/ verification-center.php?slug=$1
+RewriteRule ^verification-center/(.*)$ verification-center.php?slug=$1
+RewriteRule ^verification-center/ verification-center.php
+RewriteRule ^verification-center$ verification-center.php 
+
+
+RewriteRule ^member_register_verification/(.*)/ member_register_verification.php?slug=$1
+RewriteRule ^member_register_verification/(.*)$ member_register_verification.php?slug=$1
+RewriteRule ^member_register_verification/ member_register_verification.php
+RewriteRule ^member_register_verification$ member_register_verification.php
+
+
+RewriteRule ^member_resend_otp/ member_resend_otp.php
+RewriteRule ^member_resend_otp$ member_resend_otp.php
+
+RewriteRule ^verification-sucsess/(.*)/ verification-sucsess.php?slug=$1
+RewriteRule ^verification-sucsess/(.*)$ verification-sucsess.php?slug=$1
+RewriteRule ^verification-sucsess/ verification-sucsess.php
+RewriteRule ^verification-sucsess$ verification-sucsess.php
+
+RewriteRule ^ipn-url/ ipn_url.php
+RewriteRule ^ipn-url$ ipn_url.php
+
+RewriteRule ^candidate-payment-success/ candidate_payment_success.php
+RewriteRule ^candidate-payment-success$ candidate_payment_success.php
+
+RewriteRule ^candidate-cancel-payment/ candidate_payment_cancel.php
+RewriteRule ^candidate-cancel-payment$ candidate_payment_cancel.php
+
+
+RewriteRule ^payment-success/ org_payment_success.php
+RewriteRule ^payment-success$ org_payment_success.php
+
+RewriteRule ^cancel-payment/ org_payment_cancel.php
+RewriteRule ^cancel-payment$ org_payment_cancel.php
+
+
+
+RewriteRule ^create-resume/ candidate_edit_resume.php
+RewriteRule ^create-resume$ candidate_edit_resume.php
+
+
+
+
+
+
+
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 month"
+
+  # CSS
+
+    ExpiresByType text/css                              "access plus 1 year"
+
+
+  # Data interchange
+
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rdf+xml                   "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/ld+json                   "access plus 0 seconds"
+    ExpiresByType application/schema+json               "access plus 0 seconds"
+    ExpiresByType application/geo+json                  "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/calendar                         "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+
+  # Favicon (cannot be renamed!) and cursor images
+
+    ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+  # HTML
+
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+
+  # JavaScript
+
+    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType application/x-javascript              "access plus 1 year"
+    ExpiresByType text/javascript                       "access plus 1 year"
+
+
+  # Manifest files
+
+    ExpiresByType application/manifest+json             "access plus 1 week"
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+
+
+  # Markdown
+
+    ExpiresByType text/markdown                         "access plus 0 seconds"
+
+
+  # Media files
+
+    ExpiresByType audio/ogg                             "access plus 1 month"
+    ExpiresByType image/bmp                             "access plus 1 month"
+    ExpiresByType image/gif                             "access plus 1 month"
+    ExpiresByType image/jpeg                            "access plus 1 month"
+    ExpiresByType image/png                             "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+    ExpiresByType image/webp                            "access plus 1 month"
+    ExpiresByType video/mp4                             "access plus 1 month"
+    ExpiresByType video/ogg                             "access plus 1 month"
+    ExpiresByType video/webm                            "access plus 1 month"
+
+
+  # WebAssembly
+
+    ExpiresByType application/wasm                      "access plus 1 year"
+
+
+  # Web fonts
+
+    # Collection
+    ExpiresByType font/collection                       "access plus 1 month"
+
+    # Embedded OpenType (EOT)
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType font/eot                              "access plus 1 month"
+
+    # OpenType
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType font/otf                              "access plus 1 month"
+
+    # TrueType
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/ttf                              "access plus 1 month"
+
+    # Web Open Font Format (WOFF) 1.0
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/x-font-woff               "access plus 1 month"
+    ExpiresByType font/woff                             "access plus 1 month"
+
+    # Web Open Font Format (WOFF) 2.0
+    ExpiresByType application/font-woff2                "access plus 1 month"
+    ExpiresByType font/woff2                            "access plus 1 month"
+
+
+  # Other
+
+    ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+
+</IfModule>
+
+# BEGIN cPanel-generated php ini directives, do not edit
+# Manual editing of this file may result in unexpected behavior.
+# To make changes to this file, use the cPanel MultiPHP INI Editor (Home >> Software >> MultiPHP INI Editor)
+# For more information, read our documentation (https://go.cpanel.net/EA4ModifyINI)
+<IfModule php7_module>
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 32M
+   php_value post_max_size 8M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php74"
+   php_value upload_max_filesize 2M
+   php_flag zlib.output_compression Off
+</IfModule>
+<IfModule lsapi_module>
+   php_flag display_errors On
+   php_value max_execution_time 30
+   php_value max_input_time 60
+   php_value max_input_vars 1000
+   php_value memory_limit 32M
+   php_value post_max_size 8M
+   php_value session.gc_maxlifetime 1440
+   php_value session.save_path "/var/cpanel/php/sessions/ea-php74"
+   php_value upload_max_filesize 2M
+   php_flag zlib.output_compression Off
+</IfModule>
+# END cPanel-generated php ini directives, do not edit
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

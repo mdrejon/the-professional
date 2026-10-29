@@ -1,0 +1,60 @@
+# ==========================================
+# Large folders & User Uploads (Ignored for now)
+# ==========================================
+# Root uploads and media
+/files/*
+!/files/.gitkeep
+
+/data/images/
+/data/uploads/
+/data/banner/
+/data/.thumbs/
+
+/member/images/*
+!/member/images/.gitkeep
+
+# Admin uploads & backups
+/hdadmin/
+# Thumbnails & CKEditor uploads
+/.thumbs/
+/ckeditor/kcfinder/upload/.thumbs/
+/ckeditor/kcfinder/upload/files/*
+!/ckeditor/kcfinder/upload/files/.gitkeep
+
+# ==========================================
+# Dependencies & Package Managers
+# ==========================================
+node_modules/
+*/node_modules/
+vendor/
+*/vendor/
+
+# ==========================================
+# Server, Environment & Temporary Files
+# ==========================================
+.ftpquota
+.well-known/
+error_log
+*.log
+
+# Archives & Backups
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+*.bak
+*.swp
+
+# ==========================================
+# Operating System & IDE Files
+# ==========================================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project

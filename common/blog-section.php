@@ -1,0 +1,91 @@
+<?php 
+ 	$blog_query = "SELECT * FROM ".$db_suffix."blog b left join ".$db_suffix."blog_categories bc on b.categories_id = bc.blog_categories_id  WHERE blog_status = '1' ORDER BY blog_id desc, blog_order asc";
+							
+	$blog_sql = $db->select($blog_query);
+
+if (mysqli_num_rows($blog_sql) > 0) :
+ ?>
+<section class="new-blog section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-title">
+					<h5>Our Blog</h5>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="blog-slider owl-carousel">
+					<?php 
+						 	
+							while ($row = mysqli_fetch_object($blog_sql)): 
+
+								$blog_update_date = strtotime($row->blog_update_date);
+								$blog_update_date = date('d F, Y', $blog_update_date);
+								?>
+					<div class="single-blog-slider">
+						<a href="<?php echo SITE_URL ?>blog/<?php echo $row->blog_slug ?>" class="blog-img" style="background-image: url('<?php echo SITE_URL ?>data/images/blog/<?php echo $row->blog_img ?>');">
+							<div class="blog-img-wrap ">
+								<!-- <span><a href="#"><i class="fas fa-image"></i></a></span> -->
+								<!-- <span><a href="<?php echo SITE_URL ?>blog/<?php echo $row->blog_slug ?>"><i class="fas fa-link"></i></a></span> -->
+							</div>
+
+							
+						</a>
+						<div class="blog-text">
+							<span class="blog-ctg"><?php echo $row->blog_categories_name ?></span>
+							<h5><a href="<?php echo SITE_URL ?>blog/<?php echo $row->blog_slug ?>"><?php echo $row->blog_title ?></a></h5>
+							<div class="blog-meta">
+								<span class="date"><?php echo $blog_update_date;  ?></span> 
+								<?php if(!empty($row->blog_author)): ?>
+								By <span class="author"><?php echo $row->blog_author; ?></span>
+								<?php endif; ?>
+							</div>
+							
+							 <p><?php echo substr($row->blog_desc, 0, 201);  ?>.. </p>
+
+						</div>
+						
+					</div>
+					<?php endwhile; ?>
+				<!-- 
+					<div class="single-blog-slider">
+						<div class="blog-img" style="background-image: url(assets/img/bannar-2.jpg);">
+							<div class="blog-img-wrap ">
+								<span><a href="#"><i class="fas fa-image"></i></a></span>
+								<span><a href="blog-details.html"><i class="fas fa-link"></i></a></span>
+							</div>
+
+							
+						</div>
+						<div class="blog-text">
+							<span class="blog-ctg">Work</span>
+							<h5>Lorem ipsum dolor sit amet,</h5>
+							<div class="blog-meta">
+								<span class="date">January 26, 2017,</span> By <span class="author">Admin</span>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua.</p>
+
+						</div>
+						<div class="blog-btn">
+							<div class="left">
+								<a href=""></a>
+							</div>
+						</div>
+					</div> -->
+				</div>
+			</div>
+			<div class="col-lg-12 col-md-12 col-sm-12 text-center" >
+				<div class="blog-btn">
+					<div class="left">
+						<a href="<?php echo SITE_URL ?>blog">View All Blogs</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<?php endif; ?>

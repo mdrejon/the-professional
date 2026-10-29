@@ -1,0 +1,1383 @@
+
+
+
+/*=================== Basic Responsive Start ======================*/
+@media only screen and (max-width: 1024px){
+    
+
+/*=================== mobile-menu ======================*/
+ .top-menu.text-right {
+  text-align: center !important;
+}
+.top-dropdown {
+  right: auto;
+  left: -80%;
+}
+.site-menu-2.mobile{
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.4s;
+  left: -200px
+}
+.site-menu-2{
+  display: none;
+  visibility: hidden;
+}
+.site-menu-2.mobile.active {
+  
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  
+}
+.dorbdown.full {
+  width: 100% !important;
+  left: 0;
+  padding-right: 25px;
+  height: 450px;
+  overflow: auto;
+}
+
+.logo {
+  text-align: right;
+  padding-right: 15px;
+}
+
+.single-search {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+.news-email {
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+.single-f-widget {
+  margin-bottom: 15px;
+}
+.header-ctg-list ul li {
+  position: relative;
+}
+.header-ctg-list ul li:hover .mega-menu {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    z-index: 10;
+    top: 100%;
+}
+
+.mobile-menu-triger {
+  display: block;
+  visibility: visible;
+}
+
+.mobile-menu-triger {
+  width: 30%;
+}
+.logo {
+  width: 100%;
+  padding-top: 0; 
+  /* float: right; */
+}
+#sticky-wrapper .top-header-search {
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  padding-top: 0 !important;
+}
+.top-search{
+  display: none;visibility: hidden;
+}
+.top-top-header {
+  display: none;
+  visibility: hidden;
+}
+
+.single-member-img img {
+  width: 80px;
+  margin: 0 auto;
+}
+.single-member-img {
+  height: 110px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+.single-list {
+  height: auto;
+}
+.member-button {
+  /*padding-top: 0;*/
+  padding-bottom: 0;
+}
+
+.single-list {
+  padding-bottom: 15px;
+}
+
+.search-bar {
+  position: relative;
+  margin-bottom: 10px;
+}
+.footer-newslatter button { 
+  width: 100%;
+}
+.footer-newslatter h4 {
+  margin-bottom: 10px;
+} 
+.logo {
+  margin: 0 !important;
+}
+.new-bottom-menu {
+  display: none;
+  visibility: hidden;
+}
+.banner-search input, .banner-search select {
+  margin-bottom: 10px !important;
+}
+.member-short-search {
+    margin-top: 30px;
+}
+.header-trigger {
+  display: none;
+  visibility: hidden;
+}
+.header-new .social-icon.text-right {
+    display: none;
+    visibility: hidden;
+}
+.header-new .col-lg-8, .header-new .col-lg-1 {
+    width: 50%;
+}
+.new-right-menu {
+    text-align: left;
+}
+.new-right-menu ul li a {
+    font-size: 10px;
+    width: 100px !important;
+}
+.new-right-menu ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+/*.new-right-menu ul li {
+    margin-bottom: 10px;
+}*/
+/*.range.show {
+    z-index: 10;
+    position: relative;
+    height: 57px;
+}*/
+.new-right-menu ul a {
+  text-align: center;
+}
+.new-right-menu ul a {
+  text-align: center;
+}
+
+.new-right-menu ul a {
+  text-align: center;
+}
+.logo h4 {
+  font-size: 21px;
+  margin-top: -16px;
+} 
+.menu-trigger {
+    padding-top: 16px;
+}
+h1.ah-headline {
+    font-size: 13px !important;
+}
+.it-works {
+    height: auto !important;
+}
+.login-text {
+    padding-top: 0 !important;
+    text-align: center;
+}
+ .single-side-profile h4 {
+    font-size: 15px;
+}
+.profile-details .edit-btn, .single-side-profile .edit-btn {
+    background-color: #28506F;
+    color: #fff !important;
+    padding: 5px !important;
+    text-align: center !important;
+}
+.new-right-menu li.border a {
+    height: 100%;
+    padding: 6px 0 !important;
+    width: 100% !important;
+    font-size: 10px;
+    
+}
+.new-right-menu li.border {
+    width: 92px;
+    text-align: center;
+}
+#typed {
+  font-size: 14px;
+}
+.typed-cursor {
+  font-size: 14px;
+}
+.single-slogan {
+  margin-bottom: 15px;
+}
+.logo {
+  text-align: left !important;
+  /* padding-top: 25px; */
+}
+.logo a h4 {
+  font-size: 11px !important;
+}
+.logo h6 {
+  font-size: 8px;
+}
+.border-icon.d-none {
+  display: block !important;
+}
+.new-right-menu{
+  padding: 0 !important;
+}
+.new-right-menu li.border{
+  padding-top: 5px;
+}
+.new-right-menu li.border a {
+  font-size: 15px !important;
+}
+.header-new {
+  padding: 12px 0 !important;
+}
+.register-form .form-group {
+  width: 100% !important;
+  margin-right: 0 !important;
+}
+.animate-css svg text {
+  font-size: 19px !important;
+}
+.new-right-menu {
+  text-align: right !important;
+}
+.new-right-menu li.border {
+  width: 101px !important;
+  height: 31px !important;
+  padding-top: 0 !important;;
+  margin-bottom: 2px !important;
+}
+.new-right-menu li.border a {
+  font-size: 8px !important;
+  padding-top: 9px !important;
+}
+.card.card-bordered.single-chat {
+    right: 0px !important;
+    width: 300px;
+} 
+.new-leftmenu.new-leftmenu-2 {
+    width: 100%;
+    font-size: 12px;
+    position: absolute;
+overflow: auto !important;
+}
+.new-leftmenu-2 .new-mega-menu {
+    display: none !important;
+}
+.job-section .section-title {
+    padding-top: 20px !important;
+}
+.signup2 img {
+    height: 81px;
+    margin-top: 0;
+}
+.signup2 p {
+    margin-bottom: 0px;
+}
+.signup2 .register-left {
+    margin-top: 0;
+}
+.signup2 a.border-btn {
+    margin-bottom: 20px;
+}
+.hero-slider {
+    margin-top: 20px;
+}
+.new-footer-bottom-text {
+    text-align: center;
+}
+.social-icon.text-right {
+    text-align: center !important;
+}
+.cta-text h4 {
+    font-size: 20px !important;
+}
+.cta-text p {
+    font-size: 12px;
+}
+.cta-text {
+    padding-left: 10px;
+}
+section.new-footer {
+    background-size: 140% 100%;
+}
+/*New Header Responsive*/
+
+.top-slogan.new-header-slogain {
+  display: none !important;
+  visibility: hidden !important;
+}
+.top-header-search {
+  width: 100% !important;
+} 
+.top-header-search .from-group {
+  padding: 0 15px;
+}
+.top-header-search input {
+  border-radius: 7px !important;
+  margin-bottom: 5px;
+}
+.new-right-menu {
+  width: 100% !important;
+}
+.top-header-search {
+  display: none;
+  visibility: hidden;
+}
+.mobile-search-icon{
+  display: block;
+  visibility: visible;
+} 
+.new-right-menu.lesft-menu .border {
+  border: none !important;
+  height: auto !important;
+  width: auto !important;
+  right: auto;
+  left: 0;
+}
+.new-right-menu.lesft-menu .border a div {
+  padding-top: 0;
+}
+.new-right-menu.lesft-menu {
+  position: absolute;
+  top: 10px;
+  left: 14px; 
+  text-align: left;
+  float: left;
+  z-index: 100;
+} 
+.mobile-search-icon {
+  cursor: pointer;
+}
+.new-right-menu {
+    padding-top: 8px !important;
+}
+
+.new-right-menu.lesft-menu {
+    padding-top: 0 !important;
+} 
+.new-right-menu.lesft-menu ul li a {
+    padding-top: 6px !important;
+} 
+.new-right-menu {
+    padding-top: 8px !important;
+}
+
+.new-right-menu.lesft-menu {
+    padding-top: 0 !important;
+    margin-top: -7px;
+}
+.new-right-menu  {
+    width: 100% !important;
+}
+.new-right-menu.lesft-menu .dropdown li a {
+  /*! padding: 0; */
+  text-align: left;
+  padding: 5px 10px  !important;
+}
+
+.view-profile.icon.chat-with {
+	width: 49% !important;
+}
+}
+
+/*=================== Basic Responsive end ======================*/
+
+
+
+
+/*=================== I Phone 6/7/8 Responsive start ======================*/
+
+@media (max-width: 414px) {
+.new-right-menu.lesft-menu ul li a {
+    padding-top: 0px !important;
+}
+} 
+/*=================== I Phone 5/se Responsive End ======================*/
+
+@media (max-width: 400px) {
+.job-section h4.single-member-name {
+    font-size: 13px;
+
+}
+.new-right-menu li.border{
+  width: 96px !important;
+}
+.new-right-menu li.border a {
+    font-size: 7px !important;
+}
+ 
+
+.job-section .date {
+    font-size: 12px;
+}
+.new-right-menu {
+    padding-top: 0 !important;
+}
+
+.mobile-search-icon {
+    bottom: -12px;
+}
+.view-profile.icon.chat-with.goRoom_id2 {
+  margin-left: 15px !important;
+  margin-right: 0 !important;
+  font-size: 15px;
+}
+.view-profile.icon.chat-with {
+  width: 45% !important;
+}
+}
+
+
+/*=================== I Phone 5/se Responsive start ======================*/
+/*=================== Wide I Phone 5/se Responsive End ======================*/
+
+@media (max-width: 568px) and (min-width: 320px){
+.job-section .tab-pane .member-button button {
+    margin: 0px !important;
+   margin-top: 0 !important;
+}
+.tab-pane .single-member-img img {
+    width: auto !important;
+}
+}
+
+
+/*=================== I Phone 5/se Responsive start ======================*/
+
+@media (max-width: 320px) {
+.job-section .date {
+    font-size: 10px !important;
+}
+.new-right-menu li.border a {
+    font-size: 5px !important;
+}
+
+.new-right-menu li.border {
+    width: 83px !important;
+}
+.new-right-menu.new {
+    padding-top: 8px !important;
+}
+.new-right-menu.lesft-menu ul li a {
+    padding-top: 0px !important; 
+}
+.j-s-2.job-section .single-member-img {
+    padding: 13px;
+}
+
+} 
+/*=================== I Phone 5/se Responsive End ======================*/
+/* Lager Screen*/
+@media (max-width: 1199px) {
+ 
+}
+@media (min-width: 1024px) {
+/*.new-right-menu{
+  width: 30% !important;
+}*/
+/*.new-bottom-header .abs-search-icon span {
+  top: 6px !important;
+}*/
+.new-bottom-header .abs-search-icon span {
+    top: 5px !important;
+}
+
+
+}
+
+
+@media only screen and (max-width: 540px){
+.login-text h2 {
+font-size: 11px !important;
+}
+.j-s-2.job-section .single-member-img {
+    height: 140px !important;
+}
+.v-center-terms-icon span {
+    font-size: 35px !important;
+}
+.login-text h6 {
+    font-size: 10px;
+}
+.new-right-menu li.border a {
+    height: 100% !important;
+    /*padding: 6px 0 !important;*/
+    width: 100% !important;
+    font-size: 10px;
+    
+}
+
+.new-right-menu li.border {
+    /*width: 92px;*/
+    text-align: center;
+}
+/*.member-button {
+    padding-top: 0 !important;
+}*/
+.listing .member-button button, .listing .member-button a {
+    width: 45% !important;
+    float: left;
+    margin-right: 5% !important;
+    font-size: 11px;
+}
+/* .member-button { */
+    /* margin-top: 5px !important; */
+    /* padding-top: 0px !important; */
+/* } */
+.listing .member-button a {
+    margin-left: 5% !important;
+    margin-right: 0px !important;
+}
+.profile .edit-btn {
+    font-size: 10px;
+} 
+.profile .edit-btn {
+    font-size: 10px;
+}
+ 
+.profile-title h4 {
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.profile-title h6 {
+    font-size: 12px;
+}
+.job-section .member-button button {
+    margin-top: 0px;
+}
+.job-section .member-button button {
+    margin-top: 0;
+    width: 100% !important;
+    margin: 0 !important;
+}
+/*
+.job-section .img {
+    width: auto !important;
+}*/
+.tab-pane .single-member-img img {
+    width: auto !important;
+}
+
+.tab-pane .single-member-text {
+    padding: 20px !important;
+}
+.new-right-menu li.border .dropdown li a {
+    font-size: 9px !important;
+    /* padding-top: 3px !important; */
+}
+.top-header-search.mobile-search {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important; 
+}
+.its-works-desc h4 {
+    font-size: 14px;
+}
+
+.its-works-desc p {
+    font-size: 12px;
+}
+
+section.section-padding.job-section.j-s-2 .single-member-img {
+    padding: 10px 0px 0px 10px;
+}
+
+.it-works .absulate {
+    font-size: 20px;
+}
+h3.register-heading {
+    font-size: 16px;
+}
+.header-new .range span {
+    margin: 0 !important;
+    font-size: 10px !important;
+    padding: 0;
+    background-color: #28537B;
+    padding: 1px 20px;
+    margin-top: 10px !important;
+    z-index: -1;
+}
+.header-new span.distance {
+    float: right !important;
+}
+.range.show {
+    position: absolute;
+    height: 10px;
+}
+.ctg-p-menu .ctg-p-mega-menu {
+    position: relative;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ctg-p-menu:hover .ctg-p-mega-menu {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    left: 0;
+    padding-left: 20px;
+}
+
+.top-header-search .abs-search-icon span {
+  font-size: 11px;
+  top: 7px !important;
+}
+.top-header-search .abs-search-icon span {
+  left: 5px;
+}
+.top-header-search .search-location {
+  right: 4px;
+}
+.top-header-search.mobile-search input#CurrentLocation3 {
+    padding: 10px 20px;
+}
+.responsive-center {
+    text-align: center;
+}
+
+.card.card-bordered.single-chat {
+    right: 0px !important;
+    width: 231px;
+}
+.card.card-bordered.user_list .media-chat span{
+    font-size: 10px !important;
+    width: 100% !important;
+    display: inline-block;
+}
+.card.card-bordered.user_list {
+    width: 231px !important;
+}
+.chat_history {
+    font-size: 12px;
+}
+.new-right-menu.new .dropdown {
+    width: 95px !important;
+}
+.d-verification-center-header h6 {
+    font-size: 11px;
+}
+.edit-btn svg {
+     margin-right: 0px !important; 
+}
+.its-free {
+    font-size: 7px !important;
+}
+.new-right-menu.lesft-menu .dropdown{
+  width: 100px !important;
+}
+a.view-profile.icon {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+
+
+}  
+
+
+@media screen and (max-width: 320px) {
+.logo a h4 {
+    padding-left: 12px;
+}
+}
+
+
+/*=================================Sur Start =======================*/  
+@media (max-width: 767px) and (min-width: 540px) {
+.job-section .member-button button {
+    float: right !important;
+    width: 100% !important;
+    margin-top: 47px !important;
+}
+
+}
+
+/*=================================Sur Start =======================*/  
+
+
+/*=================================I Pad Start =======================*/  
+@media (max-width: 767px) and (min-width: 1024px) {
+
+.new-right-menu li.border {
+    padding: 10px;
+}
+.cta-text h4 { font-size: 20px;}
+.cta-text {
+    padding-left: 15px;
+}
+.new-right-menu {
+    width: 40% !important;
+}
+.login-text h2 {
+    font-size: 22px !important;
+}
+}
+
+/*=================================I Pad end =======================*/  
+/*ipad Pro*/
+
+
+
+
+/*=================== Galaxy S5 Responsive Start ======================*/
+
+@media (max-width: 640px) {
+.job-section h4.single-member-name {
+    font-size: 13px;
+}
+
+.job-section .date {
+    font-size: 12px;
+}
+.new-right-menu {
+    padding-top: 0 !important;
+}
+
+.mobile-search-icon {
+    bottom: 14px;
+}
+.new-right-menu.new {
+    padding-top: 5px !important;
+}
+
+section.top-slogan a h4 {
+    font-size: 11px;
+}
+
+a.single-slogan {min-height: auto !important;}
+.new-right-menu.lesft-menu {
+    padding-top: 5px !important;
+}
+h4.new-footer-title {
+    font-size: 15px;
+}
+
+.single-member-text h4 {
+    font-size: 15px;
+}
+
+.single-member-text p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.member-button button, .member-button a {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 9px;
+}
+
+.member-button a {
+    margin-right: 0;
+    margin-left: 5%;
+}
+
+.single-member-text {
+    padding: 10px 20px;
+}
+.top-header-search.mobile-search {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+}
+/*=================== Galaxy S5 Responsive End ======================*/
+
+/*=================== pixel Responsive start ======================*/
+@media (max-width: 731px) {
+.new-right-menu {
+    width: 100% !important;
+}
+.j-s-2.job-section .single-member-img {
+    height: 94%;
+    padding: 27px;
+}
+.job-section .single-member-img img {
+    width: 100%;
+}
+.member-button {
+    padding-top: 0px !important;
+}
+
+}
+/*=================== pixel Responsive start ======================*/
+
+/*=================== pixel 2 Responsive start ======================*/
+@media (max-width: 823px) {
+h4.new-footer-title {
+    font-size: 20px;
+}
+section.top-slogan a h4 {
+    font-size: 12px;
+}
+.new-right-menu.lesft-menu {
+     margin-top: 0px; 
+}
+.j-s-2.job-section .single-member-img {
+    height: 84%;
+    padding: 27px;
+}
+.job-section .single-member-img img {
+    width: 100%;
+}
+.head-search-form-input #txtCountry3 {
+  padding: 10px !important;
+} 
+.logo img {
+  width: 100% !important;
+}
+.abs-search-icon input {
+  padding: 10px 17px !important
+}
+.lesft-menu {
+	margin-top: 13px !important;
+	padding-top: 16px;
+}
+/* .logo {
+	padding: 0 !important;
+} */
+
+}
+/*=================== pixel Responsive start ======================*/
+
+/*=================== pixel 2 Responsive start ======================*/
+/*@media (max-width: 823px) (min-width: 1024px) {*/
+  @media (max-width: 823px) and (min-width: 411px) {
+.member-button {
+    padding-top: 0 !important;
+}
+
+.member-button button {
+    float: right !important;
+}
+  
+}
+/*=================== pixel Responsive start ======================*/
+
+/*=================== I Pad Responsive Start ======================*/
+@media (max-width: 767px) {
+
+.filter {
+  position: fixed;
+  height: 100%;
+  width: 80%;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  right: -100%;
+  transition: 0.4s;
+  display: block;
+  visibility: visible;
+}
+.mobile-filter-button {
+  display: block;
+  visibility: visible;
+
+}
+#filter-mobile {
+  display: block;
+  visibility: visible;
+}
+.filter.active {
+  right: 0 !important;
+  /*! left: ; */
+}
+
+
+.mobile-filter-button {
+  text-align: center;
+}
+.mobile-filter-button button {
+  border: none;
+  width: 100%;
+  margin-bottom: 13px;
+  background-color: #274B5A;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.mobile-filter-button button:hover {
+  background-color: #0C082D;
+}
+
+#filter-mobile button {
+  border: none;
+  background-color: #26484C;
+  color: #fff;
+  font-weight: 700;
+  transition: 0.4s;
+}
+#filter-mobile button:hover {
+  background: #0C082D;
+}
+
+.v-center-terms-text h5 {
+  font-size: 18px;
+}
+.v-center-terms-text p, .v-center-terms-text ul li {
+  font-size: 13px;
+}
+
+.new-bottom-header .abs-search-icon span {
+    top: 8px !important;
+}
+.hero-banner {
+    height: auto !important;
+}
+.cat-p-hero nav#menu {
+      display: block;
+      visibility: visible;
+      opacity: 1;
+  }
+  .cat-p-hero-slider {
+    display: none;
+    visibility: hidden;
+}
+.cat-p-hero {
+    height: 500px;
+}
+.hero-content {
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+}
+/*=================== I Pad Responsive End ======================*/
+
+
+@media (max-width: 720px) and (min-width: 540px) {
+  .new-right-menu.new {
+    width: 100% !important;
+}
+.listing .member-button button, .listing .member-button a {
+    width: 100% !important;
+    font-size: 13px !important;
+    margin: 0 !important;
+    margin-bottom: 11px !important;
+}
+.listing .member-button {
+    margin-top: 51px !important;
+}
+.ctg-p-menu .ctg-p-mega-menu {
+    position: relative;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ctg-p-menu:hover .ctg-p-mega-menu {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+    left: 0;
+    padding-left: 20px;
+}
+
+.top-header-search .abs-search-icon span {
+  font-size: 11px;
+  top: 7px !important;
+}
+.top-header-search .abs-search-icon span {
+  left: 0;
+}
+.top-header-search .search-location {
+  right: 3px;
+}
+}
+/*=================== Wide I Pad Pro Responsive Start ======================*/
+@media (max-width: 1200px) and (min-width: 1025px) {
+ .new-right-menu.new {
+    width: 30% !important;
+}
+
+.new-right-menu.new a {
+    padding: 5px 1px !important;
+}
+
+.top-slogan.new-header-slogain ul li a {
+    /* font-size: 9px !important; */
+} 
+}
+/*=================== Wide I Pad Pro Responsive End ======================*/
+
+
+@media (max-width: 767px) and (min-width: 701px) {
+  .top-header-search.mobile-search {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+.top-header-search.mobile-search {
+    padding-bottom: 12px !important;
+}
+.mobile-search-icon {
+    bottom: 3px !important;
+}
+section.top-slogan h4 {
+    font-size: 16px;
+}
+
+section.top-slogan a {
+    margin-bottom: 15px;
+    padding: 0 !important;
+    height: 10px !important;
+}
+
+.new-right-menu.new ul li {
+    padding: 6px;
+}
+.hero-banner-wrap .animate-css svg text {font-size: 27px;}
+ 
+span.search-location {
+    top: 2px;
+}
+
+.banner-search {
+    margin-bottom: 20px;
+}
+
+}
+
+@media (max-width: 1366px) and (min-width: 1024px) {
+.login-text {
+    padding-top: 30% !important;
+}
+
+}
+
+/*=================== Wide I Pad  Responsive start ======================*/
+@media (max-width: 1024px) and (min-width: 768px) {
+.top-header-search.mobile-search {
+   display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.top-header-search.mobile-search input#CurrentLocation3 {
+    padding: 10px 30px;
+}
+/* .top-slogan.new-header-slogain ul li a {
+    font-size: 9px;
+} */
+.top-header-search {
+  width: 100% !important;
+}
+.top-header-search.mobile-search {
+    padding-bottom: 12px !important;
+}
+  .new-right-menu li.border a {
+    height: 100%;
+    padding: 6px 0 !important;
+    width: 100% !important;
+    font-size: 15px;
+
+    
+}
+.new-right-menu {
+    width: 60% !important; 
+}
+
+.mobile-search-icon {
+    bottom: 10px !important;
+}
+
+.new-right-menu li.border {
+    /*width: 42px;*/
+    text-align: center;
+}
+  .dorbdown.full {
+  width: 750px !important;
+  }
+.single-list {
+    height: auto;
+}
+.logo h4 {
+    font-size: 20px;
+}
+.member-button {
+    margin-top: 0 !important;
+}
+
+.member-list.job-section .single-member-img {
+    border-right: transparent;
+}
+.new-right-menu li.border {
+    padding: 6px;
+}
+.cta-text h4 {font-size: 20px;}
+
+.cta-text {
+    padding-left: 15px;
+}
+.job-section .section-title {
+    margin-top: 22px;
+}
+.job-section .section-title {
+    margin-top: 22px;
+}
+li.not-verify svg {
+    color: #111 !important;
+}
+
+li.not-verify .icon svg {
+    color: #2A5992 !important;
+}
+
+li.chat-with .button {
+    padding: 10px 20px !important;
+}
+
+button.start_chat {
+    padding: 6px;
+    display: inline-block;
+    width: 100% !important;
+    text-align: center;
+} 
+button.start_chat .border-text {
+    font-size: 20px !important;
+}
+
+.profile-title h4 {
+    text-transform: uppercase;
+}
+/*.login-text {
+    padding-top: 0 !important;
+}*/
+.new-bottom-header .abs-search-icon span {
+    top: 5px !important;
+}
+.head-search-form-input #txtCountry3 {
+  padding: 10px !important;
+} 
+
+.abs-search-icon input {
+  padding: 10px 17px !important
+}
+.lesft-menu {
+	margin-top: 13px !important;
+	padding-top: 16px;
+}
+.single-content-slider {
+	margin-bottom: 10px;
+}
+.border-btn { 
+	padding: 2px 14px  !important; 
+}
+
+
+}
+/*I pad*/
+@media (max-width: 768px) {
+
+  .single-member-text h4 {
+    font-size: 15px;
+}
+
+.single-member-text p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.single-member-text {
+    padding: 10px !important;
+    padding-right: 20px !important;
+}
+
+.listing .member-button button, .listing .member-button a {
+    width: 45%;
+    float: left;
+    margin-right: 5%;
+}
+
+.listing .member-button a {
+    margin-right: 0;
+    margin-left: 5%;
+}
+
+.member-button {
+    margin-top: 5px !important;
+}
+.job-section .member-button {
+    padding-top: 0;
+}
+
+.job-section .member-button button {
+    float: right !important;
+  /*  width: 100%;
+    margin-top: 60px;*/
+  }
+.job-section .single-member-img {
+     border: none !important; 
+}
+.job-section .tab-pane .single-member-text {
+    padding: 20px !important;
+}
+
+.job-section .tab-pane .member-button a {
+    /* float: right; */
+    margin-left: 0 !important;
+}
+.single-content-slider {
+	margin-bottom: 10px;
+}
+.border-btn { 
+	padding: 2px 14px  !important; 
+}
+
+
+}
+/*I pad*/
+@media (max-width: 1024px) and (min-width: 701px) {
+ 
+.new-right-menu li.border a {
+    height: 100% !important;
+    padding: 6px 0 !important;
+    width: 100% !important;
+    font-size: 15px;
+    
+}
+.new-right-menu {
+    width: 40% ;
+}
+.new-right-menu li.border {
+  /*width: 42px;*/
+  width: 129px !important;
+  text-align: center;
+}
+
+ .new-main-menu {
+    display: none !important;
+    visibility: hidden !important;
+}
+.banner-search input, .banner-search select {
+    margin-bottom: 10px;
+}
+.logo h4 {
+    font-size: 20px;
+}
+
+.new-right-menu u li a {
+    font-size: 11px !important;
+}
+
+.new-right-menu li.border a, .new-right-menu li.border.join-now a {
+    font-size: 10px !important;
+    height: 40px;
+}
+
+/*New Header Responsive*/
+
+.top-slogan.new-header-slogain {
+  display: none !important;
+  visibility: hidden !important;
+}
+.top-header-search {
+  width: 100% !important;
+}
+
+.top-header-search .from-group {
+  padding: 0 15px;
+}
+.top-header-search input {
+  border-radius: 7px !important;
+  margin-bottom: 5px;
+}
+/*.new-right-menu {
+  width: 100% !important;
+}*/
+.top-header-search {
+  display: none;
+  visibility: hidden;
+}
+.mobile-search-icon{
+  display: block;
+  visibility: visible;
+}
+ 
+.new-right-menu.lesft-menu .border {
+  border: none !important;
+  height: auto !important;
+  width: auto !important;
+  right: auto;
+  left: 0;
+}
+.new-right-menu.lesft-menu .border a div {
+  padding-top: 0;
+}
+.new-right-menu.lesft-menu {
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  height: ;
+  text-align: left;
+  float: left;
+  z-index: 100;
+}
+ 
+.mobile-search-icon {
+  cursor: pointer;
+}
+.it-works {
+    height: 180px !important;
+}
+
+
+}
+
+/*=================== Wide I Pad  Responsive End ======================*/
+@media (max-width: 1024px) {
+  h1.ah-headline {
+    font-size: 15px !important;
+}
+  
+}
+
+@media (max-width: 991px) {
+  /* .logo {
+    padding: 0;
+  } */
+}
+
+
+
+
+
+@media (max-width: 700px) {
+
+
+@media (max-width: 575px) {
+
+}
+
+@media (max-width: 359px) {
+
+}
+
+@media only screen and (min-width: 1200px){
+
+}
+
+
+
